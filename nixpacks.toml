@@ -1,0 +1,5 @@
+# يثبّت نسخة PHP 8.3 — لا تتغير إلا بتعديل هذا الملف
+providers = ["php"]
+
+[phases.setup]
+nixPkgs = ["php83", "php83Extensions.pdo_mysql", "php83Extensions.mysqli"]
